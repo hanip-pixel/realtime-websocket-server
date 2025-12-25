@@ -1,0 +1,17 @@
+{
+  "name": "realtime-websocket-server",
+  "version": "1.0.0",
+  "description": "Studi kasus pengembangan aplikasi perangkat lunak desktop cross-platform real-time menggunakan websocket server dengan pendekatan <b>3-Tier Architecture Pattern</b> (client-tier, application-tier, data-tier) dan <b>Layered Architecture Pattern</b> (presentation layer, business logic layer, data access layer, data source layer).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "express": "^5.2.1",
+    "ws": "^8.18.3"
+  }
+}
