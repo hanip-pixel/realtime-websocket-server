@@ -11,7 +11,6 @@ const clients = new Map();
 
 const PHP_BACKEND_URL = 'http://localhost/application-tier-php/public';
 
-// Handler untuk pesan dari Java client
 async function handleClientMessage(ws, message) {
     try {
         const data = JSON.parse(message);
@@ -37,7 +36,6 @@ async function handleClientMessage(ws, message) {
                     data: response.data.data
                 }));
                 
-                // Broadcast ke semua client kecuali pengirim
                 broadcastExclude(ws, {
                     type: 'KARYAWAN_CREATED',
                     data: response.data.data
